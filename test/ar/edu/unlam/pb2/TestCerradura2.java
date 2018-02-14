@@ -17,7 +17,7 @@ public class TestCerradura2 {
 	@Test
 	public void testQueAbre() {
 		Cerradura2 miCerradura = new Cerradura2(1234,4);	
-		miCerradura.abrir(123);
+		miCerradura.abrir(1234);
 		
 		Assert.assertTrue(miCerradura.mostrarEstado()); //true abierto
 	}
@@ -25,10 +25,10 @@ public class TestCerradura2 {
 	@Test 
 	public void testQueBloquea(){
 		Cerradura2 miCerradura = new Cerradura2(1234,4);
-		miCerradura.abrir(123);
-		miCerradura.abrir(2);
 		miCerradura.abrir(124);
 		miCerradura.abrir(2);
+		miCerradura.abrir(129);
+		miCerradura.abrir(223);
 		
 		Assert.assertFalse(miCerradura.mostrarEstado()); //si el estado es falso 
 	}

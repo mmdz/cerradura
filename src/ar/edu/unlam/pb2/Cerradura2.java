@@ -40,9 +40,10 @@ public class Cerradura2 {
 			if(cantidadIntentosFallidos.equals(intentosMaximos)){  //los intentos max se lo digo en el test
 				estaBloqueada = true; //se bloquea
 			
-			estado = false;
 		
 			}
+			estado = false;
+
 		}
 		return this.estado;
 
